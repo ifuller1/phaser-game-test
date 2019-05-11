@@ -1,0 +1,23 @@
+{
+    "name": "phaser-game-test",
+    "version": "1.0.0",
+    "description": "Teach kids to progream",
+    "main": "index.ts",
+    "author": "ifuller1 <dashdotian@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "lint": "tslint -p tsconfig.json \"src/**\"",
+        "build": "NODE_ENV=production parcel build index.html --public-url='./' --out-dir ../../public/ops_tool_v2",
+        "web": "parcel index.html",
+        "test": "yarn run lint && jest --forceExit",
+        "test:watch": "jest --watch",
+        "postmerge": "yarn install"
+    },
+    "private": true,
+    "dependencies": {
+        "parcel": "^1.12.3",
+        "phaser": "^3.17.0",
+        "prettier": "^1.17.0",
+        "typescript": "^3.4.5"
+    }
+}
